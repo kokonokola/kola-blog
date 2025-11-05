@@ -1,5 +1,5 @@
 body {
-  background-image: url('../images/B-.webp'); /* 从 css 文件回到上级目录后进入 images 文件夹 */
+  background-image: url('https://images-1385539326.cos.ap-nanjing.myqcloud.com/B.webp?q-sign-algorithm=sha1&q-ak=AKID_plVQuMCK0JnCUgCvcie2bb1dhDr4ctNtj0Rb7QHQtIdoofVpluUfUXBjJwcllCS&q-sign-time=1762335285;1762338885&q-key-time=1762335285;1762338885&q-header-list=host&q-url-param-list=ci-process&q-signature=5f796584753102dc85408cba19956db802eab199&x-cos-security-token=jq0DG4QiAJjSr66kg1yZsq9NsmddqcHa3556b2ae59ae141a36804d54a843545fWu_xNqJDzVBRcHgi70nzokJM84WtDx42R5SdlYmi6sqkoTDHYU9_u7x7lhlgB4TJJuUjhakM7x44WazoK4mNDmO09WVLOSU4OUU0vnxyG8TLw4gbROtI6LbMUnWPutVb_waGVWB-1GZxlsMvbTE8NXwckOTvSLMkO0NaFktPb5XWA83Gr_F8_aTa9gN2_3NW7qX0DA3qnATxZl037BvjkQIN1IfgjbhoR4Qr0alzsHNLFJugwbn_3PCsfrRXsothIJ3B2zR06zuf4PQtWwMtWw&ci-process=originImage'); /* 从 css 文件回到上级目录后进入 images 文件夹 */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -49,4 +49,5 @@ li{
 .rightcolumn {
   flex: 1 1 30%;
 }
+
  
