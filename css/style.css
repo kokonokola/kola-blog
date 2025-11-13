@@ -1,11 +1,48 @@
 body {
-  background-image: url('https://images-1385539326.cos.ap-nanjing.myqcloud.com/B.webp'); /* 从 css 文件回到上级目录后进入 images 文件夹 */
+ 
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   margin: 0;
   font-family: "Microsoft YaHei", sans-serif;
 }
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+ .video-bg-container {
+    position: fixed;      /* 固定位置，不随滚动 */
+    top: 0;
+    left: 0;
+    width: 100vw;         /* 确保占满整个可视宽度 */
+    height: 100vh;        /* 确保占满整个可视高度 */
+    overflow: hidden;
+    z-index: -1;          /* 放在所有内容下方 */
+    background: black;    /* 视频加载前的背景 */
+  }
+ .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    /* 保持比例同时裁剪铺满整个区域 */
+    object-position: center; /* 居中裁切 */
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  /* 可选：添加一层暗遮罩增强可读性 */
+  .video-bg-container::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.1);
+    z-index: 0
+  }
+
 li a {
     display: block;
     color: #000;
@@ -18,6 +55,16 @@ li a:hover {
 }
 li{
 	float:left;
+}
+ul a {
+    color: #000;
+    text-decoration: none;
+}
+ul a:hover {
+    color: white;
+}
+ul{
+	padding: 0;
 }
 .header {
   background-color: rgb(236, 236, 236,0.7);
@@ -49,6 +96,4 @@ li{
 .rightcolumn {
   flex: 1 1 30%;
 }
-
  
-
