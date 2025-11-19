@@ -125,15 +125,49 @@ ul{
   background-color: #555;
   color: white;
 }
-#waline {
-    margin-top: 20px;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.9); /* 稍微白一点的背景，防止字看不清 */
-    border-radius: 10px;
-    text-align: left;
+:root {
+    --waline-theme-color: #02ffb3 !important;
+    --waline-active-color: #00dcb4 !important;
+    --waline-bgcolor: rgba(255, 255, 255, 0.0) !important; /* 评论区背景透明 */
+    --waline-bgcolor-light: rgba(255, 255, 255, 0.5) !important; /* 输入框半透明 */
   }
-  /* 调整夜间模式/暗色模式下的文字颜色（可选） */
-  :root {
-    --waline-theme-color: #02ffb3; /* 使用你页脚的那个绿色作为主题色 */
-    --waline-active-color: #02ffb3;
+
+  /* 2. 整体容器美化 */
+  #waline {
+    width: 95%;            /* 宽度撑开 */
+    margin: 0 auto;        /* 居中 */
+    padding: 1.5rem;       /* 增加内边距 */
+    background: rgba(255, 255, 255, 0.85); /* 给整个评论区加个磨砂白背景 */
+    border-radius: 15px;   /* 圆角 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 淡淡的阴影 */
   }
+
+  /* 3. 修复输入框可能太窄的问题 */
+  .wl-header {
+    display: flex;
+    gap: 10px;
+  }
+  .wl-header-item {
+    flex: 1; /* 让昵称、邮箱、网址三个框自动平分宽度 */
+  }
+  
+  /* 4. 输入框样式微调 */
+  .wl-input {
+    border-radius: 8px !important;
+    background-color: rgba(255, 255, 255, 0.6) !important; /* 输入框底色 */
+    transition: all 0.3s ease;
+  }
+  .wl-input:focus {
+    background-color: #fff !important; /* 点击输入时变白 */
+    box-shadow: 0 0 5px rgba(2, 255, 179, 0.5) !important; /* 聚焦时发绿光 */
+  }
+
+  /* 5. 提交按钮美化 */
+  .wl-btn.primary {
+    border-radius: 20px !important; /* 按钮变圆 */
+    padding: 0 25px !important;
+    font-weight: bold;
+    color: #333 !important; /* 按钮文字颜色 */
+  }
+  
+  /* --- 留言板美化结束 --- */
