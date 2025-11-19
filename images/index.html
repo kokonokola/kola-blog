@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="utf-8">
+<title>可拉の小站</title>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <div class="video-bg-container">
+    <video class="bg-video" autoplay muted loop playsinline>
+      <source src="images/background.mp4" type="video/mp4">
+      你的浏览器不支持视频标签。
+    </video>
+  </div>
+<header>
+<div class="header">
+  <h1>可拉の小站</h1>
+   <div class="navbar">
+  <a href="index.html">🏠 首页</a>
+  <a href="about.html">👤 关于我</a>
+  <a href="blog.html">📜 日志</a>
+  <a href="links.html">🔗 友链</a>
+    </div>
+</header>
+</div>
+<div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>欢迎来到可拉の小站，这是我的个人网站。我想在这里分享一些有意思的，或者记录我的成长！！ξ( ✿＞◡❛)</h2>
+        <a></a>
+        <div class="card">
+          <h2>日志</h2>
+          <p>2025.11.6——购买了域名，国内可以正常访问了！</p>
+          <p>2025.11.5——本站托管于GitHub，正式上线。但存在问题；国内服务速度过慢</p>
+          <p>本站由2025.11.1开始建设，计划将来想实现的内容有 · 讨论板 · 资源下载</p>
+        </div>
+        <div class="card">
+          <ul><a href="images.html" style="display:block;text-align:left;">前往照片墙</a></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>关于我</h2>
+        <p>就读于江西财经大学的25级软件工程学生。爱好有音乐、游戏、摄影。努力学习贝斯中</p>
+        <h4>社交账号</h4>
+        <p>QQ:2154901360</p>
+        <ul><a href="https://space.bilibili.com/529896802?spm_id_from=333.1007.0.0" target="_blank" rel="noopener" >
+        <img src="images/favicon.ico"  width:50%; height:auto;>ココの可拉的个人空间
+        </a></ul>
+      </div>
+    </div>
+</div>
+</body>
+<footer style="text-align:center;padding:20px;color:#02ffb3;">
+  © 2025 可拉的小世界 | 由 HTML + CSS 驱动 🌸
+</footer>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+
+  init({
+    el: '#waline',
+    // ⚠️⚠️⚠️ 重要：把下面这个地址换成你在 第一步 里获得的 Vercel 地址 ⚠️⚠️⚠️
+    serverURL: 'https://kolacomments-b4kqgejkz-kokonokolas-projects.vercel.app/', 
+    dark: 'body[class="dark"]', // 如果以后做夜间模式适配可以用
+  });
+</script>
+</html>
