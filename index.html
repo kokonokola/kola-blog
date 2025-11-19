@@ -40,6 +40,21 @@
           <ul><a href="images.html" style="display:block;text-align:left;">前往照片墙</a></ul>
         </div>
       </div>
+      <div class="card">
+   <h2>留言板 💬</h2>
+   <div id="waline"></div>
+</div>
+
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+
+  init({
+    el: '#waline',
+    // ⚠️⚠️⚠️ 重要：把下面这个地址换成你在 第一步 里获得的 Vercel 地址 ⚠️⚠️⚠️
+    serverURL: 'https://kolacomments-b4kqgejkz-kokonokolas-projects.vercel.app/', 
+    dark: 'body[class="dark"]', // 如果以后做夜间模式适配可以用
+  });
+</script>
     </div>
 
     <div class="rightcolumn">
@@ -58,14 +73,5 @@
 <footer style="text-align:center;padding:20px;color:#02ffb3;">
   © 2025 可拉的小世界 | 由 HTML + CSS 驱动 🌸
 </footer>
-<script type="module">
-  import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
 
-  init({
-    el: '#waline',
-    // ⚠️⚠️⚠️ 重要：把下面这个地址换成你在 第一步 里获得的 Vercel 地址 ⚠️⚠️⚠️
-    serverURL: 'https://kolacomments-b4kqgejkz-kokonokolas-projects.vercel.app/', 
-    dark: 'body[class="dark"]', // 如果以后做夜间模式适配可以用
-  });
-</script>
 </html>
