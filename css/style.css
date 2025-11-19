@@ -126,8 +126,8 @@ ul{
   color: white;
 }
 :root {
-    --waline-theme-color: #02ffb3 !important;
-    --waline-active-color: #00dcb4 !important;
+    --waline-theme-color: #f2acee !important;
+    --waline-active-color: #f9a8ed !important;
     --waline-bgcolor: rgba(255, 255, 255, 0.0) !important; /* 评论区背景透明 */
     --waline-bgcolor-light: rgba(255, 255, 255, 0.5) !important; /* 输入框半透明 */
   }
