@@ -16,8 +16,13 @@
   </div>
 <header>
 <div class="header">
-   <li><a href="index.html"style="display: block;text-align:left;">← 返回首页</a></li>
   <h1>可拉の小站</h1>
+   <div class="navbar">
+  <a href="index.html">🏠 首页</a>
+  <a href="about.html">👤 关于我</a>
+  <a href="blog.html">📜 日志</a>
+  <a href="links.html">🔗 友链</a>
+    </div>
 </header>
 </div>
 <div class="row">
@@ -53,4 +58,14 @@
 <footer style="text-align:center;padding:20px;color:#02ffb3;">
   © 2025 可拉的小世界 | 由 HTML + CSS 驱动 🌸
 </footer>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+
+  init({
+    el: '#waline',
+    // ⚠️⚠️⚠️ 重要：把下面这个地址换成你在 第一步 里获得的 Vercel 地址 ⚠️⚠️⚠️
+    serverURL: 'https://kolacomments-b4kqgejkz-kokonokolas-projects.vercel.app/', 
+    dark: 'body[class="dark"]', // 如果以后做夜间模式适配可以用
+  });
+</script>
 </html>
