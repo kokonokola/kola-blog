@@ -48,13 +48,16 @@ li a {
     color: #000;
     padding: 8px 16px;
     text-decoration: none;
+    
 }
 li a:hover {
     background-color: #555;
     color: white;
 }
 li{
-	float:left;
+  list-style-type: none; /* 去掉前面的点 */
+  float: left; 
+  margin-right: 10px;
 }
 ul a {
     color: #000;
@@ -96,4 +99,41 @@ ul{
 .rightcolumn {
   flex: 1 1 30%;
 }
- 
+ .navbar {
+  background-color: rgba(236, 236, 236, 0.7);
+  overflow: hidden;
+  display: flex;
+  justify-content: left; /* 居中对齐 */
+  gap: 30px; /* 每个链接之间的间距 */
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* 导航链接 */
+.navbar a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 16px;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 8px;
+}
+
+/* 悬停时 */
+.navbar a:hover {
+  background-color: #555;
+  color: white;
+}
+#waline {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.9); /* 稍微白一点的背景，防止字看不清 */
+    border-radius: 10px;
+    text-align: left;
+  }
+  /* 调整夜间模式/暗色模式下的文字颜色（可选） */
+  :root {
+    --waline-theme-color: #02ffb3; /* 使用你页脚的那个绿色作为主题色 */
+    --waline-active-color: #02ffb3;
+  }
